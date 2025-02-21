@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayesh Prabhu - Portfolio</title>
     <style>
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,25 +17,69 @@
             color: white;
             text-align: center;
             padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
         }
         .section {
             margin-bottom: 20px;
+            padding: 15px;
+            background: #eef3f7;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section:hover {
+            background: #dbeeff;
+            transform: scale(1.03);
         }
         h2 {
             color: #444;
+        }
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #555;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Links */
+        a {
+            color: #0277bd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jayesh Prabhu - Portfolio</h1>
+        Jayesh Prabhu - Portfolio
     </header>
     <div class="container">
         <div class="section">
@@ -50,6 +95,9 @@
             <h2>📞 Contact</h2>
             <p>Email: <a href="mailto:jayeshprabhu42@gmail.com">jayeshprabhu42@gmail.com</a></p>
             <p>LinkedIn: <a href="http://linkedin.com/in/jayesh-prabhu-b517b3228/" target="_blank">Jayesh v Prabhu</a></p>
+            <div class="btn-container">
+                <a href="mailto:jayeshprabhu42@gmail.com" class="btn">Get in Touch</a>
+            </div>
         </div>
     </div>
 </body>
